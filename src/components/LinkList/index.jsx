@@ -1,7 +1,11 @@
 import './LinkList.css'
 
-import './Link.css';
-
-export default function Link({ title, description, label }) {
-    
+function LinkList({children}) {
+    return (
+        <div className="link-list">
+            { children }
+        </div>
+    )
 }
+
+export default LinkList;
